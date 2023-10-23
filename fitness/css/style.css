@@ -1,0 +1,442 @@
+/* variables */
+:root{
+    --brown:#CA9277;
+    --light_white:#FFF4EB;
+    --black:#000;
+    --light_black:#303030;
+  }
+ /* /////////////////// */
+ /* Font-family exported */
+ @font-face {
+     font-family: "Excon";
+     src: url(../font_family/Excon-Regular.otf);
+ }
+ @font-face {
+    font-family: "Ranade";
+    src: url(../font_family/Ranade-Medium.otf);
+}
+ /* //////////////////////// */
+ /* Basic style */
+ *,
+ ::after,
+ ::before{
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+ }
+ html{
+     font-size: 62.25%;
+ }
+ 
+ body{
+     font-family: "Excon" , sans-serif;
+     font-size: 1.6rem;
+     font-weight: 300;
+     box-sizing: border-box;
+     
+ }
+ /* //////////////////////////// */
+ /* Common style */
+ a{
+     display: inline-block;
+     text-decoration: none;
+ }
+ a:link
+ a:visited {
+     font-family: inherit;
+ }
+ button{
+     display: inline-block;
+     border: none;
+     background-color: transparent;
+     cursor: pointer;
+ }
+ /* ////////////////////////// */
+ /* utilities */
+ .row{
+    max-width: 124rem;
+    margin-inline: auto;
+ }
+ .line1{
+    height: 1px;
+    background-color: var(--brown);
+ }
+ .color{
+    color: var(--light_white) !important;
+ }
+ .width{
+    max-width: 50.8rem;
+ }
+ .width2{
+    max-width: 80rem;
+ }
+ .width3{
+    max-width: 59rem;
+ }
+ .width4{
+    max-width: 27rem;
+ }
+ .margin_bottom{
+    margin-bottom: 10rem;
+ }
+ .margin_medium{
+    margin-bottom: 4rem;
+ }
+ .font_weight{
+    font-weight: 500 !important;
+ }
+ .color2{
+    color: var(--light_black) !important;
+ }
+ .margin_small{
+    margin-bottom: 2.5rem !important;
+ }
+ .background_color{
+    background-color: var(--brown) !important;
+ }
+ .margin{
+    margin-inline: auto;
+ }
+ .text_align{
+    text-align: center;
+ }
+ /* //////////////// */
+ /* Button */
+ .btn_hero{
+    font-family: "Ranade" , sans-serif;
+    padding: 1.5rem 4rem;
+    background-color: var(--light_black);
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--light_white);
+ }
+ .btn_about{
+    font-size: 1.8rem;
+    color: var(--light_white);
+    padding: 1.5rem 4rem;
+    background-color: var(--light_black);
+    border-radius: 1rem;
+    font-family: "Ranade" , sans-serif;
+    font-weight: 500;
+
+ }
+ .journey_btn{
+    font-size: 1.8rem;
+    font-family: "Ranade", sans-serif;
+    font-weight: 500;
+    background-color: var(--light_black);
+    padding: 2rem 6rem;
+    border-radius: 1rem;
+    color: var(--light_white);
+ }
+ /* ///////////////// */
+ /* typography */
+ .logo_text{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--light_black);
+    margin-left: -6.5rem;
+ }
+ .purche_text{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--light_black);
+    margin-left: 1rem;
+ }
+ .heading_primary{
+    font-family: "Ranade" , sans-serif;
+    font-size: 7.2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.plain_text{
+   color: var(--light_black);
+   font-size: 1.8rem;
+   font-weight: 400;
+   letter-spacing: -0.72px; 
+}
+.heading_secondary{
+    font-size: 6.4rem;
+    font-weight: 700;
+    font-family: "Ranade" , sans-serif;
+    color: var(--light_white);
+    margin-bottom: 3.5rem;
+    line-height: 6.4rem;
+}
+.card_text{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--light_white);
+    margin-bottom: 1rem;
+}
+.fitness_timing{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    color: var(--brown);
+}
+.owner_name{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--light_white);
+    margin-bottom: .4rem;
+}
+.ceo{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--brown);
+
+}
+.footer_text{
+    font-family: "Ranade", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--light_black);
+    position: absolute;
+    left: -2rem;
+    top: 2rem;
+   
+}
+h5{
+    font-size: 1.8rem;
+    color: var(--light_black);
+    font-weight: 500;
+    font-family: "Ranade", sans-serif;
+    margin-bottom: 3.7rem;
+}
+.footer_navlink{
+    display: block;
+    color: var(--light_black);
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.footer_navlink:not(:last-child){
+    margin-bottom: 2rem;
+}
+ /* /////////////////////// */
+/* navigation bar */
+.nav_box{
+    padding: 4.3rem 2rem;
+    background-color: var(--light_white);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_text{
+    display: flex;
+    align-items: center;
+}
+.purche{
+    display: flex;
+}
+.heading_teritary{
+    font-size: 7.2rem;
+    max-width: 70rem;
+    color: var(--light_white);
+    font-weight: 700;
+    line-height: 7.2rem;
+    margin-inline: auto;
+    text-align: center;
+    font-family: "Ranade",sans-serif;
+    margin-bottom: 4rem;
+
+}
+/* //////////////////// */
+/* Header */
+.header{
+    padding: 11rem 2rem;
+    background-image: linear-gradient(to right,var(--light_white) 55%,var(--brown) 45%);
+}
+.hero{
+    display: flex;
+}
+.hero_content{
+    flex: 1;
+}
+.hero_imgbox{
+    flex: 1;
+    
+}
+.hero_img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* ///////////////////////////// */
+.main{
+    padding: 5rem 2rem;
+    background-color: var(--light_black);
+}
+.main_content{
+    margin-bottom: 7rem;
+}
+.main_cardbox{
+    display: flex;
+    gap: 2rem;
+}
+.main_card{
+    flex: 1;
+}
+.main_cardimg{
+    margin-bottom: 3rem;
+}
+.card_img{
+    width: 100%;
+}
+/* /////////////////////////// */
+/* About */
+.about{
+    padding: 12rem 2rem;
+    background-image: linear-gradient(to right ,var(--brown) 40% ,transparent 40%, var(--light_white) 60%);
+}
+.about_content{
+    display: flex;
+    gap: 9rem;
+}
+.about_imgbox{
+    position: relative;
+    flex: 1;
+}
+.about_description{
+    padding-top: 5rem;
+    flex: 1;
+}
+.about_image1{
+    width: 35rem;
+}
+.about_image2{
+    width: 35rem;
+    position: absolute;
+    right: 0rem;
+    top: 5rem;
+    
+}
+.img_about{
+    width: 100%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+}
+/* /////////////////////////////////// */
+/* journey */
+.journey{
+    height: 75rem;
+    padding: 0 2rem;
+    background-image: linear-gradient( 90deg,var(--light_white) 0%, var(--light_white) 60%, transparent 60%),
+    url(../images/journeyimg.png);
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.journey_content{
+    padding: 17.6rem 0;
+}
+/* /////////////////////////// */
+/* discover */
+.discover{
+    background-color: var(--light_black);
+    padding: 10rem 2rem;
+
+}
+.btn_box{
+    text-align: center;
+}
+/* /////////////////////////////// */
+/* exploar */
+.exploar{
+    height: 177rem;
+    background-image: linear-gradient(to bottom,var(--light_white) 50%, transparent 50%, var(--light_black) 50%);
+    padding: 12rem 2rem;
+}
+.yoga_videobox{
+    max-width: 100rem;
+    margin-inline: auto;
+    margin-bottom: 12rem;
+}
+.quote_box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7rem;
+    
+}
+.yoga_video{
+    width: 100%;
+    
+}
+.quote_text{
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 7.2rem;
+    color: var(--light_white);
+    max-width: 82rem;
+    margin-top: 6rem;
+    margin-left: 7.3rem;
+}
+.owner_box{
+    max-width: 82rem;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+}
+.img_slide{
+    margin-left: auto;
+}
+.owner_detail{
+    margin-left: 2rem;
+}
+/* /////////////////////// */
+.footer_box{
+    padding: 12rem 2rem;
+    background-color: var(--light_white);
+    
+
+}
+.footer_logotext{
+    position: relative;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+.footer_container{
+    display: flex;
+    
+}
+.footer_content{
+    flex: 1;
+}
+.footer_nav{
+    flex: 1.5;
+}
+.social_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+.social_item:not(:last-child){
+    margin-right: 1rem;
+}
+.social_box{
+    display: flex;
+    list-style: none;
+}
+.footer_nav{
+    display: flex;
+    gap: 15rem;
+}
+.copywrite{
+    background-color: var(--light_black);
+    text-align: center;
+    padding: 2.7rem 2rem; 
+    color: var(--light_white);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.32px;
+    opacity: 0.8;
+}
